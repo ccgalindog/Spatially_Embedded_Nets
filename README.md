@@ -24,11 +24,11 @@ This algorithm generates random spatially embedded graphs with characteristics t
 
 <center><a href="https://www.codecogs.com/eqnedit.php?latex=f_{(i,j)}&space;=&space;\frac{(d_G(i,j)&plus;1))^r}{d_{spatial}(i,j)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f_{(i,j)}&space;=&space;\frac{(d_G(i,j)&plus;1))^r}{d_{spatial}(i,j)}" title="f_{(i,j)} = \frac{(d_G(i,j)+1))^r}{d_{spatial}(x_i,x_j)}" /></a></center>
 
-Which represents a trade-off between the spatial distance and connection distance separating each pair of nodes i and j.
+Which represents a trade-off between the spatial distance and connection distance separating each pair of nodes *i* and *j*.
 
 #### Input parameters:
 
-N_0: Number of nodes to be aranged initially in a Minimum Spanning Tree (MST).
+N0: Number of nodes to be aranged initially in a Minimum Spanning Tree (MST).
 
 N: int - Number of nodes of the final network.
 
@@ -50,6 +50,9 @@ x_2add: numpy array with shape ( N-N0, 2 ) - geographic node locations for nodes
 G: networkx.Graph - Generated network structure.
 
 xf: numpy.array - Geographic locations of all nodes.
+
+
+<img src="https://github.com/ccgalindog/Spatially_Embedded_Nets/blob/master/Images/K_powergrid_N0_1_Nadd_199_p_0.6_q_0.4_r_1_s_0_.png" width="255" height="255" />
 
 
 
