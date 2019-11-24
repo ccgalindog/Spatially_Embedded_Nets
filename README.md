@@ -28,30 +28,34 @@ Which represents a trade-off between the spatial distance and connection distanc
 
 #### Input parameters:
 
-N0: Number of nodes to be aranged initially in a Minimum Spanning Tree (MST).
+*N0:* Number of nodes to be aranged initially in a Minimum Spanning Tree (MST).
 
-N: int - Number of nodes of the final network.
+*N:* int - Number of nodes of the final network.
 
-p: float in range [0,1] - Probability of attaching an additional link to each new node added on each growth phase step.
+*p:* float in range [0,1] - Probability of attaching an additional link to each new node added on each growth phase step.
 
-q: float in range [0,1] - Probability of constructing further links between existing nodes on each growth phase step.
+*q:* float in range [0,1] - Probability of constructing further links between existing nodes on each growth phase step.
 
-r: float - Exponent for the cost-vs-redundancy trade-off function.
+*r:* float - Exponent for the cost-vs-redundancy trade-off function.
 
-s: float in range [0,1] - Probability of splitting an existing line on each growth step.
+*s:* float in range [0,1] - Probability of splitting an existing line on each growth step.
 
-x0: numpy array with shape ( N0, 2 ) - geographic node locations for nodes in the minimum spanning tree [[x_1, y_1],[x_2, y_2], ...[x_N0, y_N0]].
+*x0:* numpy array with shape ( N0, 2 ) - geographic node locations for nodes in the minimum spanning tree.
 
-x_2add: numpy array with shape ( N-N0, 2 ) - geographic node locations for nodes added in the growth phase [[x_1, y_1],[x_2, y_2], ...[x_(N-N0), y_(N-N0)]].
+*x_2add:* numpy array with shape ( N-N0, 2 ) - geographic node locations for nodes added in the growth phase.
 
 
 #### Returns:
 
-G: networkx.Graph - Generated network structure.
+*G:* networkx.Graph - Generated network structure.
 
-xf: numpy.array - Geographic locations of all nodes.
+*xf:* numpy.array - Geographic locations of all nodes.
 
-<img src="https://github.com/ccgalindog/Spatially_Embedded_Nets/blob/master/Images/K_powergrid_N0_200_Nadd_0_p_0.6_q_0.4_r_0_s_0_.png" width="450" height="300" /><img src="https://github.com/ccgalindog/Spatially_Embedded_Nets/blob/master/Images/K_powergrid_N0_1_Nadd_199_p_0.6_q_0.4_r_1_s_0_.png" width="450" height="300" />
+
+
+#### Output examples:
+
+<img src="https://github.com/ccgalindog/Spatially_Embedded_Nets/blob/master/Images/K_powergrid_N0_200_Nadd_0_p_0.6_q_0.4_r_0_s_0_.png" width="420" height="300" /><img src="https://github.com/ccgalindog/Spatially_Embedded_Nets/blob/master/Images/K_powergrid_N0_1_Nadd_199_p_0.6_q_0.4_r_1_s_0_.png" width="420" height="300" />
 
 
 
