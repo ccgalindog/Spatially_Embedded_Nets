@@ -37,6 +37,7 @@ s: float in range [0,1] - Probability of splitting an existing line on each grow
 x0: numpy array with shape ( N0, 2 ) - geographic node locations for nodes in the minimum spanning tree [[x_1, y_1],[x_2, y_2], ...[x_N0, y_N0]].
 x_2add: numpy array with shape ( N-N0, 2 ) - geographic node locations for nodes added in the growth phase [[x_1, y_1],[x_2, y_2], ...[x_(N-N0), y_(N-N0)]].
 
+
 Returns:
 
 G: networkx.Graph - Generated network structure.
