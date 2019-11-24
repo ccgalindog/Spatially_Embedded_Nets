@@ -22,6 +22,16 @@ url="https://doi.org/10.1140/epjst/e2014-02279-6"
 
 This algorithm generates random spatially embedded graphs with characteristics that resemble real-world infrastructure networks as power-grids.
 
+Parameters:
+
+$N_0$ - Number of nodes to be aranged initially in a Minimum Spanning Tree (MST).
+
+The procedure is composed of 2 phases: 
+
+*1. Initialization:* Here $N$ nodes are placed on a MST and $m = N_0(1-s)(p+q)$ extra edges are added between nodes with maximum $f_{(i,j)}$. 
+
+and growth.
+
 
 ## How to use:
 
