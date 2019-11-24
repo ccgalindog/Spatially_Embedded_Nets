@@ -24,7 +24,7 @@ This algorithm generates random spatially embedded graphs with characteristics t
 
 Parameters:
 
-$$N_0$$ - Number of nodes to be aranged initially in a Minimum Spanning Tree (MST).
+```math N_0 ``` - Number of nodes to be aranged initially in a Minimum Spanning Tree (MST).
 
 The procedure is composed of 2 phases: 
 
