@@ -51,8 +51,7 @@ G: networkx.Graph - Generated network structure.
 
 xf: numpy.array - Geographic locations of all nodes.
 
-
-<img src="https://github.com/ccgalindog/Spatially_Embedded_Nets/blob/master/Images/K_powergrid_N0_1_Nadd_199_p_0.6_q_0.4_r_1_s_0_.png" width="400" height="255" /><img src="https://github.com/ccgalindog/Spatially_Embedded_Nets/blob/master/Images/K_powergrid_N0_200_Nadd_0_p_0.6_q_0.4_r_0_s_0_.png" width="400" height="255" />
+<img src="https://github.com/ccgalindog/Spatially_Embedded_Nets/blob/master/Images/K_powergrid_N0_200_Nadd_0_p_0.6_q_0.4_r_0_s_0_.png" width="450" height="300" /><img src="https://github.com/ccgalindog/Spatially_Embedded_Nets/blob/master/Images/K_powergrid_N0_1_Nadd_199_p_0.6_q_0.4_r_1_s_0_.png" width="450" height="300" />
 
 
 
