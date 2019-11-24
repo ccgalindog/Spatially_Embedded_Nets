@@ -20,11 +20,17 @@ url="https://doi.org/10.1140/epjst/e2014-02279-6"
 }
 ```
 
+</br>
+</br>
+
 This algorithm generates random spatially embedded graphs with characteristics that resemble real-world infrastructure networks as power-grids. This is achieved by optimizing the redundancy/cost function:
 
 <center><a href="https://www.codecogs.com/eqnedit.php?latex=f_{(i,j)}&space;=&space;\frac{(d_G(i,j)&plus;1))^r}{d_{spatial}(i,j)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f_{(i,j)}&space;=&space;\frac{(d_G(i,j)&plus;1))^r}{d_{spatial}(i,j)}" title="f_{(i,j)} = \frac{(d_G(i,j)+1))^r}{d_{spatial}(x_i,x_j)}" /></a></center>
 
 Which represents a trade-off between the spatial distance and connection distance separating each pair of nodes *i* and *j*.
+
+</br>
+</br>
 
 #### Input parameters:
 
@@ -44,6 +50,8 @@ Which represents a trade-off between the spatial distance and connection distanc
 
 *x_2add:* numpy array with shape ( N-N0, 2 ) - geographic node locations for nodes added in the growth phase.
 
+</br>
+</br>
 
 #### Returns:
 
@@ -51,6 +59,8 @@ Which represents a trade-off between the spatial distance and connection distanc
 
 *xf:* numpy.array - Geographic locations of all nodes.
 
+</br>
+</br>
 
 
 #### Output examples:
@@ -59,6 +69,8 @@ Which represents a trade-off between the spatial distance and connection distanc
 
 
 
+</br>
+</br>
 
 
 ## How to use:
