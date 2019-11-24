@@ -2,7 +2,8 @@
 
 Python implementation of the algorithm proposed on:
 
-```json @Article{Schultz2014,
+```json
+@Article{Schultz2014,
 author="Schultz, Paul,
 and Heitzig, Jobst,
 and Kurths, J{\"u}rgen",
@@ -23,11 +24,11 @@ url="https://doi.org/10.1140/epjst/e2014-02279-6"
 </br>
 </br>
 
-This algorithm generates random spatially embedded graphs with characteristics that resemble real-world infrastructure networks as power-grids. This is achieved by optimizing the redundancy/cost function:
+This algorithm generates random spatially embedded graphs with characteristics that resemble real-world infrastructure networks like power-grids. This is achieved by optimizing the redundancy/cost function:
 
 <center><a href="https://www.codecogs.com/eqnedit.php?latex=f_{(i,j)}&space;=&space;\frac{(d_G(i,j)&plus;1))^r}{d_{spatial}(i,j)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f_{(i,j)}&space;=&space;\frac{(d_G(i,j)&plus;1))^r}{d_{spatial}(i,j)}" title="f_{(i,j)} = \frac{(d_G(i,j)+1))^r}{d_{spatial}(x_i,x_j)}" /></a></center>
 
-Which represents a trade-off between the spatial distance and connection distance separating each pair of nodes *i* and *j*.
+Which represents a trade-off between the spatial distance and number of actual links separating each pair of nodes *i* and *j*.
 
 </br>
 </br>
@@ -42,13 +43,13 @@ Which represents a trade-off between the spatial distance and connection distanc
 
 *q:* float in range [0,1] - Probability of constructing further links between existing nodes on each growth phase step.
 
-*r:* float - Exponent for the cost-vs-redundancy trade-off function.
+*r:* float - Exponent for the redundancy/cost trade-off function.
 
 *s:* float in range [0,1] - Probability of splitting an existing line on each growth step.
 
-*x0:* numpy array with shape ( N0, 2 ) - geographic node locations for nodes in the minimum spanning tree.
+*x0:* numpy array with shape ( N0, 2 ) - Geographic node locations for nodes in the minimum spanning tree.
 
-*x_2add:* numpy array with shape ( N-N0, 2 ) - geographic node locations for nodes added in the growth phase.
+*x_2add:* numpy array with shape ( N-N0, 2 ) - Geographic node locations for nodes added in the growth phase.
 
 </br>
 </br>
