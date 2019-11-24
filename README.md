@@ -24,13 +24,20 @@ This algorithm generates random spatially embedded graphs with characteristics t
 
 Parameters:
 
-```math $N_0$ ``` - Number of nodes to be aranged initially in a Minimum Spanning Tree (MST).
+N_0: Number of nodes to be aranged initially in a Minimum Spanning Tree (MST).
+N: int - Number of nodes of the final network.
+p: float in range [0,1] - Probability of attaching an additional link to each new node added on each growth phase step.
+q: float in range [0,1] - Probability of constructing further links between existing nodes on each growth phase step.
+r: float - exponent for the cost-vs-redundancy trade-off function.
+s: float in range [0,1] - probability of splitting an existing line on each growth step
+x0: numpy array with shape ( N0, 2 ) - geographic node locations for nodes in the minimum spanning tree [[x_1, y_1],[x_2, y_2], ...[x_N0, y_N0]]
+x_2add: numpy array with shape ( N-N0, 2 ) - geographic node locations for nodes added in the growth phase [[x_1, y_1],[x_2, y_2], ...[x_(N-N0), y_(N-N0)]]
+	
+	# Returns:
+	G: networkx.Graph - Generated network structure.
+	xf: numpy.array - Geographic locations of all nodes.
 
-The procedure is composed of 2 phases: 
-
-*1. Initialization:* Here $N$ nodes are placed on a MST and $m = N_0(1-s)(p+q)$ extra edges are added between nodes with maximum $f_{(i,j)}$. 
-
-and growth.
+<a href="https://www.codecogs.com/eqnedit.php?latex=f_{(i,j)}&space;=&space;\frac{(d_G(i,j)&plus;1))^r}{d_{spatial}(i,j)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f_{(i,j)}&space;=&space;\frac{(d_G(i,j)&plus;1))^r}{d_{spatial}(i,j)}" title="f_{(i,j)} = \frac{(d_G(i,j)+1))^r}{d_{spatial}(i,j)}" /></a>
 
 
 ## How to use:
