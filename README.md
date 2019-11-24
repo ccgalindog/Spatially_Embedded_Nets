@@ -2,7 +2,7 @@
 
 Python implementation of the algorithm proposed on:
 
-```json@Article{Schultz2014,
+```json @Article{Schultz2014,
 author="Schultz, Paul,
 and Heitzig, Jobst,
 and Kurths, J{\"u}rgen",
@@ -20,4 +20,9 @@ url="https://doi.org/10.1140/epjst/e2014-02279-6"
 }
 ```
 
+This algorithm generates random spatially embedded graphs with characteristics that resemble real-world infrastructure networks as power-grids.
 
+
+## How to use:
+
+Just import the module `spatially_embedded_networks.py` and run the function `create_synthetic_powergrid( ... )` as shown in the example script `Test_Growth_Model.py`. 
