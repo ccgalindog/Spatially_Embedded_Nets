@@ -2,7 +2,7 @@
 
 Python implementation of the algorithm proposed on:
 
-```json
+```python
 @Article{Schultz2014,
 author="Schultz, Paul and Heitzig, Jobst and Kurths, Jürgen",
 title="A random growth model for power grids and other spatially embedded infrastructure networks",
